@@ -15,7 +15,7 @@
             {
                 forward = Direction.North;
             }
-            else if (color == Player.White)
+            else if (color == Player.Black)
             {
                 forward = Direction.South;
             }
@@ -45,7 +45,9 @@
 
         private IEnumerable<Move> ForwardMoves(Position from, Board board)
         {
+            
             Position oneMovePos = from + forward;
+                
 
             if (CanMoveTo(oneMovePos, board))
             {
