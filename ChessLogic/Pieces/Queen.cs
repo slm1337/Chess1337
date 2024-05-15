@@ -8,8 +8,9 @@
         public static readonly Direction[] dirs = new Direction[]
         {
         Direction.North, Direction.South, Direction.East, Direction.West,
-        Direction.NorthEast, Direction.SouthEast, Direction.SouthWest, Direction.SouthEast
+        Direction.NorthEast, Direction.SouthEast, Direction.SouthWest, Direction.NorthWest
         };
+
         public Queen(Player color)
         {
             Color = color;
