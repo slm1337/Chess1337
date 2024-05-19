@@ -226,6 +226,7 @@ namespace ChessUI
             moveCache.Clear();
             gameState = new GameState(Player.White, Board.Initial());
             DrawBoard(gameState.Board);
+            SetCursor(gameState.CurrentPlayer);
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
